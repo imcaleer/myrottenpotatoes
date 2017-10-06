@@ -1,0 +1,7 @@
+---
+applications:
+- name: myrottenpotatoes
+  memory: 256M
+  instances: 1
+  path: .
+  command: bundle exec rake db:migrate && rake db:seed && bundle exec rails s -p $PORT
